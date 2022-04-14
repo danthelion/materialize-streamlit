@@ -1,0 +1,11 @@
+fastapi
+pydantic
+uvicorn[standard]
+SQLAlchemy
+databases
+asyncpg
+psycopg2
+psycopg2-binary
+sse-starlette
+asyncio
+anyio
