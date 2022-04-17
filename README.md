@@ -2,6 +2,8 @@ Breathing life into Streamlit with Materialize
 
 <video src='./assets/demo.mp4' width=180/></video>
 
+![Demo](./assets/demo.gif)
+
 TODO
 
 1. attributions
