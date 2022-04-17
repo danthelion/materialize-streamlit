@@ -17,11 +17,9 @@ async def consumer_airquality(graphs, window_size, status):
     windows = defaultdict(partial(deque, [0] * window_size, maxlen=window_size))
 
     async with aiohttp.ClientSession(trust_env=True) as session:
-        print("Connecting to:", WS_CONN)
         status.subheader(f"Connecting to {WS_CONN}")
         async with session.ws_connect(WS_CONN) as websocket:
             status.subheader(f"Connected to: {WS_CONN}")
-            print("Connected to:", WS_CONN)
             async for message in websocket:
                 data = message.json()
 
