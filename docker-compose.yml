@@ -48,11 +48,11 @@ services:
       - "9999:9999"
     depends_on:
       - materialized
-  streamlit:
-    build:
-      context: dashboard
-    container_name: streamlit
-    ports:
-      - "8501:8501"
-    depends_on:
-      - fastapi
+#  streamlit:
+#    build:
+#      context: dashboard
+#    container_name: streamlit
+#    ports:
+#      - "8501:8501"
+#    depends_on:
+#      - fastapi

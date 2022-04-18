@@ -5,10 +5,9 @@ from typing import List
 import databases
 import psycopg2
 import sqlalchemy
-from sqlalchemy import create_engine
-
 from fastapi import FastAPI
 from fastapi import WebSocket, WebSocketDisconnect
+from sqlalchemy import create_engine
 
 MESSAGE_STREAM_DELAY = 2  # seconds
 MESSAGE_STREAM_RETRY_TIMEOUT = 15000  # miliseconds
